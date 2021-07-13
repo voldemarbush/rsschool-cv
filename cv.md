@@ -11,5 +11,5 @@
 * ### Education
      * BelGUT
 * ### English
-     * I have completed my beginner English course at Streamline with an A2 Elementary level. [Certificate.] (https://str.by/streamline-certificate/A7F3ECA435AB5F990758EAEA298E9382 "Certificate.")
+     * I have completed my beginner English course at Streamline with an A2 Elementary level. [Certificate.](https://str.by/streamline-certificate/A7F3ECA435AB5F990758EAEA298E9382 "Certificate.")
      * Also i have passed EF standard English test. [Result.](https://www.efset.org/cert/xwNiwg "Result")
