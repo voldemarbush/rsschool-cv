@@ -80,6 +80,7 @@ h1.myname {
 /* MAIN */
 .main {
     justify-content: center;
+    min-width: 1300px;
 }
 .section {
     text-align: center;
@@ -106,6 +107,7 @@ p.main {
  /* FOOTER */
  footer {
     background-color: var(--main-back);
+     min-width: 1300px;
     text-align: center;
 }
 .footer_inlay {
