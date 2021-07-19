@@ -1,0 +1,134 @@
+:root {
+    --main-back:#007491;
+    --main-text:#ffffff;
+    --main-line:#a0a0a0;
+
+  }
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+header {
+    background-color: var(--main-back);
+}
+.header_line {
+    position: relative;
+    top: 75px;
+    background-color: var(--main-line);
+    height: 60px;
+    border: 0px;
+}
+.header_inlay {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    position: relative;
+    top:-30px;
+}
+.header_myname {
+    display: flex;
+    align-items: center;
+    color: var(--main-text);
+}
+.header_photo {
+    display: flex;
+    position: sticky;
+    width: 150px;
+    border-radius: 75px;
+    margin-left: 100px;
+    border: 2px solid var(--main-text);
+}
+h1.myname {
+    padding-left: 30px;
+    font-size: 2.5em;
+    font-weight: 700;
+    white-space: nowrap;
+}
+.header_nav {
+    align-self: center;
+}
+.nav_menu {
+    list-style: none;
+    position: sticky;
+    display: flex;  
+    list-style-type: none;
+}
+.menu_item {
+    display: inline-block;
+    white-space: nowrap;
+}
+.menu_link {
+    color: var(--main-text);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.5s;
+}
+.menu_item:before, 
+.menu_item:last-child:after {
+    content: "•";
+    margin: 0 10px;
+}
+.menu_link:hover {
+    color: #000000;
+    letter-spacing: 1px;
+}
+/* MAIN */
+.main {
+    justify-content: center;
+}
+.section {
+    text-align: center;
+}
+h2.main {
+    color:var(--main-back);
+    font-size: xx-large;
+}
+p.main {
+    line-height: 1.8;
+}
+.space {
+    height: 20px;
+}
+.h_line {
+    height:3px;
+    background-color:var(--main-line);
+    width:70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+ }
+ /* FOOTER */
+ footer {
+    background-color: var(--main-back);
+    text-align: center;
+}
+.footer_inlay {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+    min-height: 150px;
+    color: var(--main-text);
+}
+.footer_link {
+    color: var(--main-text);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.5s;
+    width: 300px;
+    margin-top: 20px;
+}
+.footer_image{
+    height:80px;
+    filter: invert(1);
+} 
+.footer_link:hover {
+    color: #000000;
+    letter-spacing: 1px;
+}
