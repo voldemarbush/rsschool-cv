@@ -12,6 +12,7 @@
 /* HEADER */
 header {
     background-color: var(--main-back);
+    min-width: 1300px;
 }
 .header_line {
     position: relative;
