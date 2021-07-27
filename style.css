@@ -81,6 +81,7 @@ h1.myname {
 .main {
     justify-content: center;
     min-width: 1300px;
+    line-height: 1.8;
 }
 .section {
     text-align: center;
@@ -89,8 +90,9 @@ h2.main {
     color:var(--main-back);
     font-size: xx-large;
 }
-p.main {
-    line-height: 1.8;
+ul.main {
+    padding-left: 0px;
+    List-style-type: none;
 }
 .space {
     height: 20px;
