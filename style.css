@@ -102,7 +102,7 @@ h1.myname {
     font-size: 20px;
 }
 .main_container {
-    max-width: 1200px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     line-height: 1.8;
