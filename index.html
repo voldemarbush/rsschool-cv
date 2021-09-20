@@ -5,16 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VoldemarBush-CV</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="monokai-sublime.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Header -->
-    <header>
+    <header class="header">
         <div class="header_line"></div>
         <div class="header_inlay">
             <div class="header_myname">
                 <img src="photo.jpg" alt="photo" class="header_photo">
                 <h1 class="myname">VLADIMIR BUSHEV</h1>
+                <div class="header_burger">
+                    <span></span>
+                </div>
+            </div>            
                 <nav class="header_nav">
                     <ul class="nav_menu">
                         <li class="menu_item"><a href="#contacts" class="menu_link">Contacts</a></li>
@@ -25,75 +31,83 @@
                         <li class="menu_item"><a href="#english" class="menu_link">English</a></li>
                     </ul>
                 </nav>
-            </div>
+
         </div>
     </header>
     <!-- Main -->
     <main class="main">
-        <section class="section">
-            <div class="space"></div>
-            <span id="contacts"></span>
-            <h2 class="main">CONTACTS</h2> 
-            <ul class="main">
-                <li><strong>email: </strong>voldemarbush@gmail.com<br></li>
-                <li><strong>discord: </strong>Vladimir Bushev#4339</li>
-            </ul>
-            <div class="h_line"></div>            
-        </section>
-        <section class="section">
-            <span id="aboutme"></span>
-            <h2 class="main">ABOUT ME</h2> 
-            <p class="main">
-                In 1998 i worked as engineer-programmer at BelGUT for one year.<br>Since 1999 i worked as engineer-electronic and system administrator in medical-genetic centre.<br>
-                Now I plan to study in order to become a front-end developer in a year.
-            </p>
-            <div class="h_line"></div> 
-        </section>
-        <section class="section">
-            <span id="myskills"></span>
-            <h2 class="main">MY SKILLS</h2> 
-            <ul class="main">
-                <li>&bull; Adobe Photoshop &bull; CorelDRAW &bull;</li>
-                <li>&bull; Adobe Premiere &bull; FinalCut &bull;</li>
-                <li>&bull; Presonus StudioOne &bull; Steinberg Cubase &bull;</li>
-                <li>&bull; MAGIX Samplitude &bull; Adobe Audition &bull;</li>
-                <li>&bull; Pascal &bull; Delphi &bull;</li>
-                <li>&bull; Markdown &bull;</li>
-                <li>&bull; HTML/CSS &bull;</li>
-            </ul>
-            <div class="h_line"></div> 
-        </section>
-        <section class="section">
-            <span id="codesample"></span>
-            <h2 class="main">CODE SAMPLE</h2> 
-            <p class="main">
-                Complete code of this page on <a href="https://github.com/voldemarbush/rsschool-cv/tree/gh-pages" title="GitHub">GitHub</a>
-            </p>
-            <div class="h_line"></div> 
-        </section>
-        <section class="section">
-            <span id="education"></span>
-            <h2 class="main">EDUCATION</h2> 
-            <p class="main">
-                Belarusian State University of Transport
-            </p>
-            <div class="h_line"></div> 
-        </section>
-        <section class="section">
-            <span id="english"></span>
-            <h2 class="main">ENGLISH</h2> 
-            <p class="main">
-                I have completed my beginner English course at Streamline with an A2 Elementary level. <a href="https://str.by/streamline-certificate/A7F3ECA435AB5F990758EAEA298E9382" title="Certificate.">Certificate.</a><br>
-                Also i have passed EF standard English test. <a href="https://www.efset.org/cert/xwNiwg" title="Result">Result.</a>
-            </p>
-            <div class="space"></div>
-            <div class="space"></div>
-        </section>
+        <div class="main_container">
+            <section class="main_container">
+                <span id="contacts"></span>
+                <div class="space"></div>
+                <h2 class="main_container">CONTACTS</h2> 
+                <ul class="main_container">
+                    <li><strong>email: </strong>voldemarbush@gmail.com<br></li>
+                    <li><strong>discord: </strong>Vladimir Bushev#4339</li>
+                </ul>
+                <div class="h_line"></div>            
+            </section>
+            <section class="main_container">
+                <span id="aboutme"></span>
+                <h2 class="main_container">ABOUT ME</h2> 
+                <p class="main_container">
+                    In 1998 i worked as engineer-programmer at BelGUT for one year.<br>Since 1999 i worked as engineer-electronic and system administrator in medical-genetic centre.<br>
+                    Now I plan to study in order to become a front-end developer in a year.
+                </p>
+                <div class="h_line"></div> 
+            </section>
+            <section class="main_container">
+                <span id="myskills"></span>
+                <h2 class="main_container">MY SKILLS</h2> 
+                <ul class="main_container">
+                    <li>&bull; Adobe Photoshop &bull; CorelDRAW &bull;</li>
+                    <li>&bull; Adobe Premiere &bull; FinalCut &bull;</li>
+                    <li>&bull; Presonus StudioOne &bull; Steinberg Cubase &bull;</li>
+                    <li>&bull; MAGIX Samplitude &bull; Adobe Audition &bull;</li>
+                    <li>&bull; Pascal &bull; Delphi &bull;</li>
+                    <li>&bull; Markdown &bull;</li>
+                    <li>&bull; HTML/CSS &bull;</li>
+                </ul>
+                <div class="h_line"></div> 
+            </section>
+            <section class="main_container">
+                <span id="codesample"></span>
+                <h2 class="main_container">CODE SAMPLE</h2> 
+                <p class="main_container">
+                    Complete code of this page on <a href="https://github.com/voldemarbush/rsschool-cv/tree/gh-pages" title="GitHub">GitHub</a>
+    <pre class="main_pre"><code>var maxRedigit = function(num) {
+        num = num.toString();
+        if (num.length != 3) return null;
+        num = num.split('').sort().reverse().join('');
+        return +num;
+    };</code></pre>
+                </p>
+                <div class="h_line"></div> 
+            </section>
+            <section class="main_container">
+                <span id="education"></span>
+                <h2 class="main_container">EDUCATION</h2> 
+                <p class="main_container">
+                    Belarusian State University of Transport
+                </p>
+                <div class="h_line"></div> 
+            </section>
+            <section class="main_container">
+                <span id="english"></span>
+                <h2 class="main_container">ENGLISH</h2> 
+                <p class="main_container">
+                    I have completed my beginner English course at Streamline with an A2 Elementary level. <a href="https://str.by/streamline-certificate/A7F3ECA435AB5F990758EAEA298E9382" title="Certificate.">Certificate.</a><br>
+                    Also i have passed EF standard English test. <a href="https://www.efset.org/cert/xwNiwg" title="Result">Result.</a>
+                </p>
+                <div class="space"></div>
+                <div class="space"></div>
+            </section>
+        </div>
     </main>
     <!-- Footer -->
     <footer class="footer">
         <div class="footer_inlay">
-            <span>
+            <span class="footer_span">
                 Vladimir Bushev, RS-Shool,<br>
                 Stage#0, HTML, CSS & Git Basics. 2021
             </span>            
@@ -107,6 +121,10 @@
             </a>
         </div>
     </footer>
+    <script src="script.js"></script>
+    <script src="highlight.js"></script>
+    <script src="highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
  </body>
 </html>
 
