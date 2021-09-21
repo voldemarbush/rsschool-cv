@@ -132,12 +132,12 @@ ul.main_container {
     margin-bottom: 40px;
  }
  .main_pre {
-    width: 60%;
+    width: 605px;
     margin-left: auto;
     margin-right: auto;
     text-align: left;
     margin-top: 0px; 
-    font-size: 17px;
+    font-size: 15px;
  }
 
  /* FOOTER */
@@ -362,7 +362,7 @@ ul.main_container {
         height:40px;        
     }
     .main_pre {
-        width: 90%;
+        width: 300px;
         font-size: 12px;
     } 
 }
