@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VoldemarBush-CV</title>
+  <link rel="stylesheet" href="monokai-sublime.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="header">
+    <h1 class="header__h1">VLADIMIR BUSHEV</h1>
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li class="menu__item"><a href="#about" class="menu__link">About</a></li>
+        <li class="menu__item"><a href="#myskills" class="menu__link">Skills</a></li>
+        <li class="menu__item"><a href="#education" class="menu__link">Education</a></li>
+        <li class="menu__item"><a href="#english" class="menu__link">English</a></li>
+        <li class="menu__item"><a href="#portfolio" class="menu__link">Code Sample</a></li>
+        <li class="menu__item"><a href="#contacts" class="menu__link">Contacts</a></li>
+      </ul>
+    </nav>
+  </div>
+  <main class="main">
+    <section class="about">
+      <span id="about"></span>
+      <div class="hero__banner">
+        <div class="hero__left">
+          <h2 class="hero__h2">ABOUT</h2>
+          <div class="hero__text">
+            <p>
+              I worked as a software engineer at BelGUT, an electronics engineer and a system administrator at the
+              Medical
+              Genetic Center.
+            <p>
+              I written several projects in Delphi and Visual Basic and couple of simple sites. I also released several
+              music albums as a sound producer for different labels, created a number of graphic works for music albums,
+              several posters, and
+              also created a couple of logos for some companies. Also i made a lot of videos for my YouTube channel.
+            </p>
+            <p>
+              Now I plan to study in order to become a front-end developer, because it is very interesting process for
+              me.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="skills">
+      <span id="myskills"></span>
+      <div class="block__tittle"></div>
+      <div class="block__text">
+        <h2 class="block__text-h2">SKILLS</h2>
+        <ul class="block__text-ul">
+          <li>&bull; Pascal &bull; Delphi &bull;</li>
+          <li>&bull; Markdown &bull; HTML/CSS/JS &bull;</li>
+          <li>&bull; Adobe Photoshop &bull; CorelDRAW &bull;</li>
+          <li>&bull; Adobe Premiere &bull; FinalCut &bull;</li>
+          <li>&bull; Presonus StudioOne &bull; Steinberg Cubase &bull;</li>
+          <li>&bull; MAGIX Samplitude &bull; Adobe Audition &bull;</li>
+        </ul>
+      </div>
+    </section>
+    <section class="education">
+      <span id="education"></span>
+      <div class="education__imgbckg">
+        <div class="education__text">
+          <h2>EDUCATION</h2>
+          <p class="main_container">
+            In 1998 I graduated from the institute with a degree in road and airfield construction engineer.<br><br>
+            In 2019, graduated from the course "Linux-administrator" of the IT Academy.<br><br>
+            2021/22 - RS-School.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="english">
+      <span id="english"></span>
+      <div class="english__imgbckg">
+        <div class="block__cert"></div>
+        <div class="english__container">
+          <h2>ENGLISH</h2>
+          <p class="main_container">
+            I have completed my beginner English course at Streamline with an A2 Elementary level. <a
+              href="https://str.by/streamline-certificate/A7F3ECA435AB5F990758EAEA298E9382"
+              title="Certificate.">Certificate.</a><br><br>
+            Also i have passed EF standard English test. <a href="https://www.efset.org/cert/xwNiwg"
+              title="Result">Result.</a>
+          </p>
+        </div>
+      </div>
+      <div class="english__imgcenter"></div>
+    </section>
+    <section class="portfolio">
+      <span id="portfolio"></span>
+      <h2 class="portfolio__h2">CODE SAMPLE</h2>
+      <div class="portfolio__code">
+        <pre class="main_pre"><code>
+          function getMatrix(number) {
+            let result = [];
+            let arr = [];
+            for (a = 0; a &lt; number; a++){
+                for (b = 0; b &lt; number; b++){
+                    arr.push((b == a) ? 1 : 0);
+                }
+                result.push(arr);
+                arr = [];
+            }
+            return result;
+          }
+        </code></pre>
+      </div>
+    </section>
+    <section class="contacts">
+      <span id="contacts"></span>
+      <div class="contacts__imgbckg">
+        <div class="contacts__content-container">
+          <div class="contacts__left">
+            <h2 class="contacts__h2">CONTACTS</h2>
+            <ul class="contacts__content">
+              <li><strong>email: </strong>voldemarbush@gmail.com<br></li>
+              <li><strong>discord: </strong>Vladimir Bushev#4339</li>
+            </ul>
+          </div>
+        </div>
+        <div class="contacts__imgright"></div>
+        <div class="contacts__imgcenter"></div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inlay">
+      <a class="footer__link" href="https://rs.school/js/">
+        <img class="footer__image" src="rs_school_js.png" alt="RSS Logo">
+        <h3>Курс по front-end</h3>
+      </a>
+      <a class="footer__link footer__link-c" href="https://github.com/voldemarbush/rsschool-cv">
+        <img class="footer__image" src="github.png" alt="GitHub">
+        <h3>My GitHub</h3>
+      </a>
+      <div class="footer__right">
+        <nav>
+          <ul class="footer__menu">
+            <li class="fmenu__item"><a href="#about" class="fmenu__link">About</a></li>
+            <li class="fmenu__item"><a href="#myskills" class="fmenu__link">Skills</a></li>
+            <li class="fmenu__item"><a href="#education" class="fmenu__link">Education</a></li>
+            <li class="fmenu__item"><a href="#english" class="fmenu__link">English</a></li>
+            <li class="fmenu__item"><a href="#portfolio" class="fmenu__link">Code Sample</a></li>
+            <li class="fmenu__item"><a href="#contacts" class="fmenu__link">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <span class="copyright">Vladimir Bushev, RS-Shool, Stage#0, HTML, CSS & Git Basics. 2022</span>
+  </footer>
+  <script src="highlight.js"></script>
+  <script src="highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</body>
+
+</html>
