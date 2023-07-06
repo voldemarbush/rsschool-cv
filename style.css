@@ -1,6 +1,261 @@
+/* ---------- MAIN ---------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --font-main: 'Cormorant Upright', serif;
+  --color-main: #efe6d3;
+  --color-line: #a0a0a0;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-goldbg: linear-gradient(
+    90deg,
+    rgba(169, 127, 0, 1) 0%,
+    rgba(255, 191, 0, 1) 100%
+  );
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-main);
+  overflow-x: hidden;
+}
+
+body.active {
+  overflow-y: hidden;
+}
+
+h1 {
+  font-family: var(--font-main);
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  opacity: 1;
+  background: var(--color-goldbg);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.3s ease;
+}
+
+h2 {
+  font-family: var(--font-main);
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 5rem;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: var(--font-main);
+  font-size: 1.5rem;
+}
+
+.section__padding {
+  padding-top: 10%;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  background-color: var(--color-main);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(142, 120, 91);
+}
+
+.cv__main {
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .section__padding {
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  p {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 3rem;
+    line-height: 6rem;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  h2 {
+    font-size: 2.5rem;
+    line-height: 4rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+}
+
+/* ---------- NAVIGATION ---------- */
+
+.cv__navbar {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  background-color: rgb(0, 0, 0, 50%);
+  padding: 0 5%;
+  z-index: 1;
+  transition: 0.5s ease;
+}
+
+.cv__navbar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+}
+
+.cv__navbar-menu {
+  display: flex;
+  font-family: var(--font-main);
+  font-size: 1.5rem;
+  list-style-type: none;
+}
+
+.cv__navbar-menu a {
+  color: var(--color-main);
+  text-decoration: none;
+  margin-right: 1rem;
+  white-space: nowrap;
+  transition: 0.5s ease;
+}
+
+.cv__navbar-menu a:hover {
+  color: var(--color-white);
+}
+
+.cv__navbar-menu_icon {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  width: 28px;
+  height: 30px;
+}
+
+.cv__navbar-menu_icon span {
+  position: absolute;
+  width: 22px;
+  height: 2px;
+  right: 0;
+  background: var(--color-main);
+  transition: 0.5s ease;
+}
+
+.cv__navbar-menu_icon:before,
+.cv__navbar-menu_icon:after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: var(--color-main);
+  transition: 0.5s ease;
+}
+
+.cv__navbar-menu_icon:before {
+  top: 2px;
+}
+
+.cv__navbar-menu_icon:after {
+  bottom: 2px;
+}
+
+.cv__navbar-menu_icon.active span {
+  transform: scale(0);
+}
+
+.cv__navbar-menu_icon.active:before {
+  width: 120%;
+  top: 14px;
+  transform: rotate(45deg);
+}
+
+.cv__navbar-menu_icon.active:after {
+  width: 120%;
+  bottom: 14px;
+  transform: rotate(-45deg);
+}
+
+.cv__navbar.expand {
+  height: 100%;
+  background-color: rgb(0, 0, 0, 80%);
+  flex-direction: column;
+}
+
+.cv__navbar.expand h1 {
+  opacity: 0.3;
+}
+
+.cv__navbar-burger {
+  display: none;
+}
+
+.cv__navbar-menu.mobile {
+  position: absolute;
+  top: 20%;
+  display: flex;
+  flex-direction: column;
+  font-size: 4rem;
+  opacity: 1;
+  transition: 0.8s ease;
+}
+
+.cv__navbar-menu.mobile.close {
+  opacity: 0;
+  top: -100vh;
+}
+
+@media screen and (max-width: 1024px) {
+  .cv__navbar-menu {
+    display: none;
+  }
+
+  .cv__navbar-burger {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cv__navbar h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cv__navbar h1 {
+    font-size: 1.8rem;
+  }
+
+  .cv__navbar-menu.mobile {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .cv__navbar h1 {
+    font-size: 1.3rem;
+  }
 }
