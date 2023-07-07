@@ -142,10 +142,6 @@ p {
   transition: 0.5s ease;
 }
 
-.cv__navbar-menu a:hover {
-  color: var(--color-white);
-}
-
 .cv__navbar-menu_icon {
   position: relative;
   display: flex;
@@ -201,6 +197,12 @@ p {
 
 .cv__navbar-burger {
   display: none;
+}
+
+@media (hover: hover) {
+  .cv__navbar-menu a:hover {
+    color: var(--color-white);
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -503,4 +505,104 @@ p {
 }
 
 @media screen and (max-width: 376px) {
+}
+
+/* ---------- ENGLISH ---------- */
+
+.cv__english {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.cv__english-background {
+  position: absolute;
+  width: 100%;
+  height: 30vw;
+  background-image: url('./assets/jpg/english-b.jpg');
+  background-size: contain;
+  z-index: -1;
+}
+
+.cv__english-content {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.cv__english-content_img {
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.cv__english-content_img-str {
+  width: 100%;
+}
+
+.cv__english-content_img-efs {
+  position: absolute;
+  width: 25vw;
+  margin-right: -12.5vw;
+}
+
+.cv__english-content_text {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+}
+
+.cv__english-content_text-container {
+  position: relative;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1024px) {
+  .cv__english {
+    height: 100vh;
+  }
+
+  .cv__english-background {
+    height: 100%;
+  }
+
+  .cv__english-content {
+    height: 100%;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+  }
+
+  .cv__english-content_img {
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .cv__english-content_img-str {
+    width: 100%;
+  }
+
+  .cv__english-content_img-efs {
+    width: 30vh;
+    margin-right: 0;
+    margin-top: -15vh;
+  }
+
+  .cv__english-content_text {
+    width: 100%;
+    margin: 0;
+  }
+
+  .cv__english-content_text-container {
+    width: 80%;
+    padding-top: 100px;
+  }
 }
