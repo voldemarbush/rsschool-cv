@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vladimir Bushev CV</title>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./css/monokai-sublime.min.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -15,14 +16,14 @@
         <h1>Vladimir Bushev</h1>
         <nav>
           <div class="cv__navbar-burger">
-            <div class="cv__navbar-menu_icon"><span></span></div>
+            <div class="cv__navbar-menu_icon"><span></div>
           </div>
           <ul class="cv__navbar-menu close">
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#english">English</a></li>
-            <li><a href="#portfolio">Code Sample</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contacts">Contacts</a></li>
           </ul>
         </nav>
@@ -104,7 +105,48 @@
       </div>
     </div>
   </section>
-  <script src="index.js"></script>
+  <section class="cv__portfolio" id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="cv__portfolio-container">
+      <div class="cv__portfolio-projects_container">
+        <h3>projects:</h3>
+        <div class="cv__portfolio-projects_icon up inactive"></div>
+        <div class="cv__portfolio-projects_slider">
+          <div class="cv__portfolio-projects_images">
+            <a href="https://voldemarbush.github.io/tic-tac-toe-react/" target="_blank"><img
+                src="./assets/png/project_4.png" alt="project image"></a>
+            <a href="https://rolling-scopes-school.github.io/voldemarbush-JSFEPRESCHOOL/image-galery/"
+              target="_blank"><img src="./assets/png/project_2.png" alt="project image"></a>
+            <a href="https://rolling-scopes-school.github.io/voldemarbush-JSFEPRESCHOOL/vertical-slider/"
+              target="_blank"><img src="./assets/png/project_3.png" alt="project image"></a>
+            <a href="https://rolling-scopes-school.github.io/voldemarbush-JSFEPRESCHOOL/portfolio/" target="_blank"><img
+                src="./assets/png/project_1.png" alt="project image"></a>
+          </div>
+        </div>
+        <div class="cv__portfolio-projects_icon down"></div>
+      </div>
+      <div class="cv__portfolio-code_container">
+        <h3>code sample:</h3>
+        <pre class="main_pre"><code>
+function getMatrix(number) {
+  const result = [];
+  const arr = [];
+  for (a = 0; a &lt; number; a++){
+      for (b = 0; b &lt; number; b++){
+          arr.push((b == a) ? 1 : 0);
+      }
+      result.push(arr);
+      arr = [];
+  }
+  return result;
+}
+        </code></pre>
+      </div>
+    </div>
+  </section>
+  <script src="./js/highlight.min.js"></script>
+  <script src="./js/index.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 </body>
 
 </html>
