@@ -1,10 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vladimit Bushev CV</title>
-    <link rel="stylesheet" href="./style.css">
-  </head>
-  <body></body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vladimir Bushev CV</title>
+  <link rel="stylesheet" href="./css/monokai-sublime.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="cv__navbar">
+      <div class="cv__navbar-container">
+        <h1>Vladimir Bushev</h1>
+        <nav>
+          <div class="cv__navbar-burger">
+            <div class="cv__navbar-menu_icon"><span></span></div>
+          </div>
+          <ul class="cv__navbar-menu close">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#english">English</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="cv__hero" id="about">
+      <div class="cv__hero-info">
+        <h2>About</h2>
+        <p>
+          I started my Software Engineering career path at Belarusian State University of Transport. Then I worked on
+          position of Electronic-Engineer and a Systems Administrator at Prenatal Medical Centre. As well those time
+          simultaneously I took part as Graphical Designer and Software Developer in several independed Web Studios.
+          <br>
+          <br>
+          During my professional career I created several software projects and couple of web-sites. Also i worked in
+          music production as a sound-producer for different labels, created a number of graphic works for music albums,
+          some posters, and several of logos for different companies. <br>
+          <br>Now I’m planning to grow as a front-end developer to expand my professional skills in this area.
+        </p>
+      </div>
+    </section>
+    <section class="cv__skills section__padding" id="skills">
+      <div class="cv__skills-background"></div>
+      <div class="cv__skills-content">
+        <img src="./assets/jpg/skills.jpg" alt="skills picture">
+        <div class="cv__skills-content_text">
+          <div class="cv__skills-content_text-container">
+            <h2>SKILLS</h2>
+            <ul>
+              <li>Pascal</li>
+              <li>Delphi</li>
+              <li>Markdown</li>
+              <li>HTML/CSS/JS</li>
+              <li>React</li>
+              <li>Adobe Photoshop</li>
+              <li>CorelDRAW</li>
+              <li>Adobe Premiere</li>
+              <li>FinalCut</li>
+              <li>Presonus StudioOne</li>
+              <li>Steinberg Cubase</li>
+              <li>MAGIX Samplitude</li>
+              <li>Adobe Audition</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cv__education section__padding" id="education">
+      <div class="cv__education-content">
+        <img src="./assets/jpg/education.jpg" alt="education image">
+        <div class="cv__education-text">
+          <h2>EDUCATION</h2>
+          <p>
+            In 1998 I graduated from the Belarusian State University of Transport. <br>
+            In 2007, 2008 - School of Business of Belarusian State University. <br>
+            In 2019 - IT Academy.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="cv__english section__padding" id="english">
+      <div class="cv__english-background"></div>
+      <div class="cv__english-content">
+        <div class="cv__english-content_img">
+          <img src="./assets/jpg/streamline.jpg" alt="certificate" class="cv__english-content_img-str"><img
+            src="./assets/png/efset.png" alt="certificate" class="cv__english-content_img-efs">
+        </div>
+        <div class="cv__english-content_text">
+          <div class="cv__english-content_text-container">
+            <h2>English</h2>
+            <p>
+              I have completed my beginner English course at Streamline with
+              an A2 Elementary level.<br><br>Also i have passed EF
+              standard English test.
+              <a href="https://www.efset.org/cert/xwNiwg" title="Result">Result.</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cv__portfolio" id="portfolio">
+      <h2>Portfolio</h2>
+      <div class="cv__portfolio-container">
+        <div class="cv__portfolio-projects_container">
+          <h3>projects:</h3>
+          <div class="cv__portfolio-projects_icon up inactive"></div>
+          <div class="cv__portfolio-projects_slider">
+            <div class="cv__portfolio-projects_images">
+              <a href="https://voldemarbush.github.io/tic-tac-toe-react/" target="_blank"><img
+                  src="./assets/png/project_4.png" alt="project image"></a>
+              <a href="https://rolling-scopes-school.github.io/voldemarbush-JSFEPRESCHOOL/image-galery/"
+                target="_blank"><img src="./assets/png/project_2.png" alt="project image"></a>
+              <a href="https://rolling-scopes-school.github.io/voldemarbush-JSFEPRESCHOOL/vertical-slider/"
+                target="_blank"><img src="./assets/png/project_3.png" alt="project image"></a>
+              <a href="https://rolling-scopes-school.github.io/voldemarbush-JSFEPRESCHOOL/portfolio/"
+                target="_blank"><img src="./assets/png/project_1.png" alt="project image"></a>
+            </div>
+          </div>
+          <div class="cv__portfolio-projects_icon down"></div>
+        </div>
+        <div class="cv__portfolio-code_container">
+          <h3>code sample:</h3>
+          <pre class="main_pre"><code>
+function getMatrix(number) {
+  const result = [];
+  const arr = [];
+  for (a = 0; a &lt; number; a++){
+      for (b = 0; b &lt; number; b++){
+          arr.push((b == a) ? 1 : 0);
+      }
+      result.push(arr);
+      arr = [];
+  }
+  return result;
+}
+        </code></pre>
+        </div>
+      </div>
+    </section>
+    <section class="cv__contacts section__padding" id="contacts">
+      <div class="cv__contacts-background"></div>
+      <div class="cv__contacts-content_container">
+        <div class="cv__contacts-text_container">
+          <div class="cv__contacts-text">
+            <h2>Contacts</h2>
+            <p><strong>email: </strong>voldemarbush@gmail.com<br></p>
+            <p><strong>discord: </strong>Vladimir Bushev#4339</p>
+          </div>
+        </div>
+        <div class="cv__contacts-image_container">
+          <img src="./assets/png/telephone.png" alt="telephone" class="cv__contacts-image_telephone"><img
+            src="./assets/jpg/contacts.jpg" alt="contacts-image" class="cv__contacts-image_contacts">
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="cv__footer section__padding">
+      <div class="cv__footer-background"></div>
+      <div class="cv__footer-container">
+        <a class="cv__footer-logo_rs" href="https://rs.school/js/"><img src="./assets/png/rs_school_js.png"
+            alt="rs-logo">Front-End Course</a><a class="cv__footer-logo_git"
+          href="https://github.com/voldemarbush/rsschool-cv"><img src="./assets/png/github.png" alt="rs-logo">My
+          Github</a>
+        <ul class="cv__footer-menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#english">English</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+        </ul>
+      </div>
+      <p>
+        Vladimir Bushev, RS-Shool, Stage#0, HTML, CSS &amp; Git Basics.
+        2023
+      </p>
+    </div>
+  </footer>
+  <script src="./js/highlight.min.js"></script>
+  <script src="./js/index.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</body>
+
 </html>
