@@ -18,7 +18,9 @@ const closeMenu = () => {
 
 burger.addEventListener('click', closeMenu);
 
-menu.addEventListener('click', closeMenu);
+menu.addEventListener('click', function () {
+  if (navBar.classList.contains('expand')) closeMenu();
+});
 
 sliderDown.addEventListener('click', function () {
   slide += slide > 2 ? 0 : 1;
